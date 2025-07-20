@@ -142,7 +142,7 @@ DB_PORT = '5432'
    - Verificar permisos de escritura
    - Comprobar espacio en disco
 
-## Recomendaciones de Uso 💡
+## Recomendaciones de Uso
 
 1. **Procesamiento de Archivos**
    - Procesar en horarios de baja carga
@@ -154,7 +154,7 @@ DB_PORT = '5432'
    - Actualización de índices DB
    - Revisión de logs de error
 
-## Glosario de Términos 📖
+## Glosario de Términos
 
 - **Raw Data**: Datos sin procesar
 - **Used Data**: Datos ya procesados
