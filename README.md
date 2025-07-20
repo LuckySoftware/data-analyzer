@@ -40,10 +40,10 @@ CREATE TABLE logs (
 );
 ```
 
-## Formato de Archivos de Entrada 📝
+## Formato de Archivos de Entrada
 Los archivos de entrada deben ser archivos .txt con el siguiente formato:
 ```
-nombre_parque | valor2 | valor3 | fecha | valor5 | valor6
+valor | valor2 | valor3 | valor4 | valor5 | valor6
 ```
 Ejemplo:
 ```
@@ -60,7 +60,7 @@ Parque1 | 123.456 | 789 | 01/05/2025 00:07:00:000 | 42 | 13
 
 ### extraerIndividual.py
 - Script para procesamiento individual de archivos
-- Procesa todos el archivos .txt en la carpeta 'raw data'
+- Procesa el archivos .txt en la carpeta 'raw data'
 - Mueve automáticamente el archivos procesado a 'used data'
 - Maneja errores y registra el progreso
 
