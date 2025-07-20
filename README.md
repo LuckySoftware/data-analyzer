@@ -32,7 +32,7 @@ El sistema usa PostgreSQL con la siguiente estructura:
 ```sql
 CREATE TABLE logs (
     nombre_parque VARCHAR(100),
-    valor2 NUMERIC(15,6),
+    valor2 NUMERIC,
     valor3 INTEGER,
     fecha_hora TIMESTAMP,
     valor5 INTEGER,
