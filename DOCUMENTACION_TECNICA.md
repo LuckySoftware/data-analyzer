@@ -59,7 +59,7 @@ class CaracterísticasPrincipales:
   * Sistema de versionado por timestamp
   * Preservación de datos originales
 
-## Manejo de Errores y Excepciones 🛡️
+## Manejo de Errores y Excepciones
 
 ### 1. Validación de Datos
 ```python
