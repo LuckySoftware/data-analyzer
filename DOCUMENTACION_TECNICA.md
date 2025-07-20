@@ -27,7 +27,7 @@ class CaracterísticasPrincipales:
 2. **Transformación de Datos**
    - Conversión de tipos:
      * Strings → VARCHAR(100)
-     * Números decimales → NUMERIC(15,6)
+     * Números decimales → NUMERIC
      * Enteros → INTEGER
      * Fechas → TIMESTAMP
 
