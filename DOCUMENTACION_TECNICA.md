@@ -43,7 +43,7 @@ class CaracterísticasPrincipales:
 | Columna | Tipo | Descripción |
 |---------|------|-------------|
 | nombre_parque | VARCHAR(100) | Identificador del parque eólico |
-| valor2 | NUMERIC(15,6) | Medición de precisión alta |
+| valor2 | NUMERIC | Medición de precisión alta |
 | valor3 | INTEGER | Valor entero de medición |
 | fecha_hora | TIMESTAMP | Momento exacto de la medición |
 | valor5 | INTEGER | Valor entero adicional |
@@ -157,7 +157,6 @@ DB_PORT = '5432'
 
 ## Glosario de Términos 📖
 
-- **VarAna**: Formato de archivo de datos de variables analógicas
 - **Raw Data**: Datos sin procesar
 - **Used Data**: Datos ya procesados
 - **Timestamp**: Marca temporal única
