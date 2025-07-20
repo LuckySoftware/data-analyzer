@@ -1,10 +1,10 @@
-# Documentación Técnica de VENTUS 📚
+# Documentación Técnica
 
-## Arquitectura del Sistema 🏗️
+## Arquitectura del Sistema
 
-VENTUS está diseñado con una arquitectura modular que separa claramente las responsabilidades de cada componente del sistema. A continuación, se detalla cada aspecto técnico del sistema.
+Está diseñado con una arquitectura modular que separa claramente las responsabilidades de cada componente del sistema. A continuación, se detalla cada aspecto técnico del sistema.
 
-## Componentes Principales 🔧
+## Componentes Principales
 
 ### 1. Sistema de Procesamiento de Archivos
 
@@ -12,8 +12,9 @@ VENTUS está diseñado con una arquitectura modular que separa claramente las re
 ```python
 class CaracterísticasPrincipales:
     - Procesamiento masivo de archivos
-    - Manejo de errores robusto
-    - Sistema de logging integrado
+    - Manejo de errores
+    - Sistema de feedback de progreso con "print()",
+    a pesar de que un sistema de logs con "logging" es perfectamente aplicable
     - Gestión automática de archivos procesados
 ```
 
@@ -42,7 +43,7 @@ class CaracterísticasPrincipales:
 | Columna | Tipo | Descripción |
 |---------|------|-------------|
 | nombre_parque | VARCHAR(100) | Identificador del parque eólico |
-| valor2 | NUMERIC | Medición de precisión alta |
+| valor2 | NUMERIC(15,6) | Medición de precisión alta |
 | valor3 | INTEGER | Valor entero de medición |
 | fecha_hora | TIMESTAMP | Momento exacto de la medición |
 | valor5 | INTEGER | Valor entero adicional |
@@ -51,7 +52,7 @@ class CaracterísticasPrincipales:
 ### 3. Sistema de Archivos
 
 #### Estructura de Directorios
-- **raw data/**: Directorio de ingreso de datos
+- **raw data/**: Directorio de ingesta
   * Archivos pendientes de procesamiento
   * Formato de nombre: `VarAna_YYYY_MM_DD_HH_mm.txt`
 
@@ -59,7 +60,7 @@ class CaracterísticasPrincipales:
   * Sistema de versionado por timestamp
   * Preservación de datos originales
 
-## Manejo de Errores y Excepciones
+## Manejo de Errores y Excepciones 🛡️
 
 ### 1. Validación de Datos
 ```python
@@ -76,7 +77,7 @@ Tipos de Validaciones:
 - **subprocess.CalledProcessError**: Error en carga a DB
 - **IOError**: Error en operaciones de archivo
 
-## Optimizaciones y Mejores Prácticas
+## Optimizaciones y Mejores Prácticas 🚀
 
 ### 1. Rendimiento
 - Uso de `StringIO` para manejo eficiente de memoria
@@ -86,13 +87,14 @@ Tipos de Validaciones:
 ### 2. Seguridad
 - Validación de tipos de datos
 - Sanitización de entradas
+- Manejo seguro de credenciales DB
 
 ### 3. Mantenibilidad
 - Código modular y comentado
 - Constantes configurables
 - Logs detallados de operaciones
 
-## Configuración del Entorno
+## Configuración del Entorno 🛠️
 
 ### 1. Variables de Entorno
 ```python
@@ -106,11 +108,11 @@ DB_PORT = '5432'
 
 ### 2. Dependencias del Sistema
 - Sistema Operativo: Compatible con Windows/Unix
-- Python 3.x (desarrollado con: 3.10.1)
-- PostgreSQL 12+ (desarrollado con: 14.19 HomeBrew)
+- Python 3.x
+- PostgreSQL 12+
 - Permisos de escritura en directorios
 
-## Procedimientos de Mantenimiento
+## Procedimientos de Mantenimiento 🔧
 
 ### 1. Respaldo de Datos
 - Conservación de archivos originales
@@ -122,7 +124,7 @@ DB_PORT = '5432'
 - Estadísticas de procesamiento
 - Control de archivos duplicados
 
-## Guía de Troubleshooting
+## Guía de Troubleshooting 🔍
 
 ### Problemas Comunes y Soluciones
 
@@ -141,7 +143,7 @@ DB_PORT = '5432'
    - Verificar permisos de escritura
    - Comprobar espacio en disco
 
-## Recomendaciones de Uso
+## Recomendaciones de Uso 💡
 
 1. **Procesamiento de Archivos**
    - Procesar en horarios de baja carga
@@ -153,8 +155,9 @@ DB_PORT = '5432'
    - Actualización de índices DB
    - Revisión de logs de error
 
-## Glosario de Términos
+## Glosario de Términos 📖
 
+- **VarAna**: Formato de archivo de datos de variables analógicas
 - **Raw Data**: Datos sin procesar
 - **Used Data**: Datos ya procesados
 - **Timestamp**: Marca temporal única

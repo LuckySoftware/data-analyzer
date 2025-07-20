@@ -5,7 +5,7 @@ El sistema lee archivos de texto con un formato específico (delimitados por " |
 
 ## Estructura del Proyecto
 ```
-VENTUS/
+MAIN
 ├── data/
 │   ├── raw data/      # Archivos originales para procesar
 │   └── used data/     # Archivos ya procesados
