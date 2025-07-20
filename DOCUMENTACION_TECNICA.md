@@ -31,7 +31,7 @@ class CaracterísticasPrincipales:
      * Fechas → TIMESTAMP
 
 3. **Carga en Base de Datos**
-   - Uso de COPY para carga eficiente
+   - Uso de COPY para carga eficiente (posteriormente se va a necesitar de controlar los datos por tipo de dato)
    - Manejo de transacciones
    - Validación de integridad
 
@@ -76,7 +76,7 @@ Tipos de Validaciones:
 - **subprocess.CalledProcessError**: Error en carga a DB
 - **IOError**: Error en operaciones de archivo
 
-## Optimizaciones y Mejores Prácticas 🚀
+## Optimizaciones y Mejores Prácticas
 
 ### 1. Rendimiento
 - Uso de `StringIO` para manejo eficiente de memoria
@@ -93,7 +93,7 @@ Tipos de Validaciones:
 - Constantes configurables
 - Logs detallados de operaciones
 
-## Configuración del Entorno 🛠️
+## Configuración del Entorno
 
 ### 1. Variables de Entorno
 ```python
@@ -123,7 +123,7 @@ DB_PORT = '5432'
 - Estadísticas de procesamiento
 - Control de archivos duplicados
 
-## Guía de Troubleshooting 🔍
+## Guía de Troubleshooting
 
 ### Problemas Comunes y Soluciones
 
