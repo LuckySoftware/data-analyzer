@@ -13,8 +13,7 @@ Está diseñado con una arquitectura modular que separa claramente las responsab
 class CaracterísticasPrincipales:
     - Procesamiento masivo de archivos
     - Manejo de errores
-    - Sistema de feedback de progreso con "print()",
-    a pesar de que un sistema de logs con "logging" es perfectamente aplicable
+    - Sistema de feedback de progreso con "print()", a pesar de que un sistema de logs con "logging" es perfectamente aplicable
     - Gestión automática de archivos procesados
 ```
 
